@@ -10,11 +10,11 @@ none
 false
 DEBUG;TRACE
 H:\FileTransfer\FileTransfer\FileTrans\FileTrans\App.xaml
-11151548125
+52136056128
 
-9-1120302632
+13849406537
 131569487696
-MainWindow.xaml;
+主界面\MainWindow.xaml;信息显示页\FileInfo.xaml;关于\FileTransAbout.xaml;注册页\Register.xaml;登录页\Login.xaml;
 
-False
+True
 
