@@ -6,11 +6,6 @@
         xmlns:local="clr-namespace:FileTrans.登录页"
         mc:Ignorable="d"
         Title="Login" Height="450" Width="800" WindowStyle="None">
-    <Window.Resources>
-        <Style >
-           
-        </Style>
-    </Window.Resources>
     <Grid>
         <Grid.RowDefinitions>
             <RowDefinition Height="*"></RowDefinition>
@@ -48,7 +43,7 @@
                 </StackPanel>
                 <StackPanel Grid.Row="1" Orientation="Horizontal" VerticalAlignment="Center" HorizontalAlignment="Center">
                     <Label Content="密  码:" FontSize="30"></Label>
-                    <PasswordBox Name="Pwd" pa Height="40" Width="200"></PasswordBox>
+                    <PasswordBox Name="Pwd"  Height="40" Width="200"></PasswordBox>
                     <Label Content="忘记密码  " FontSize="16" VerticalAlignment="Center" Foreground="#FFD61C1C"></Label>
                 </StackPanel>
                 <StackPanel Grid.Row="3" Orientation="Horizontal" VerticalAlignment="Top" HorizontalAlignment="Center">

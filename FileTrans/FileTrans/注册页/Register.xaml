@@ -5,8 +5,66 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:FileTrans.注册页"
         mc:Ignorable="d"
-        Title="Register" Height="450" Width="800">
+        Title="Register" Height="450" Width="500" WindowStyle="None">
     <Grid>
-        
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"></RowDefinition>
+            <RowDefinition Height="7*"></RowDefinition>
+        </Grid.RowDefinitions>
+        <Grid Grid.Row="0" Background="#FF3C8E75">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="2*"></ColumnDefinition>
+                <ColumnDefinition Width="6*"></ColumnDefinition>
+                <ColumnDefinition Width="*"></ColumnDefinition>
+                <ColumnDefinition Width="2*"></ColumnDefinition>
+            </Grid.ColumnDefinitions>
+            <Label Name="SoftName" Grid.Column="1" Content="文件传输系统V1.0---注册" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="22" FontFamily="Segoe UI Black" Foreground="#FFFA5F5F"/>
+            <StackPanel Grid.Column="3" Orientation="Horizontal" HorizontalAlignment="Right">
+                <Button Name="Hide"  Width="40" Height="40" Content="-" FontSize="30" Background="#FF3C8E75" HorizontalAlignment="Right" VerticalAlignment="Center" BorderThickness="1,1,1,1" Margin="0,0,2,0">
+                </Button>
+                <Button Name="Close"  Width="40" Height="40" Content="X" FontSize="30" Background="#FF3C8E75" HorizontalAlignment="Right" VerticalAlignment="Center" BorderThickness="1,1,1,1" Margin="0,0,3,0" />
+            </StackPanel>
+        </Grid>
+        <Grid Grid.Row="1">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="0.2*"></ColumnDefinition>
+                <ColumnDefinition Width="1.5*"></ColumnDefinition>
+                <ColumnDefinition Width="0.2*"></ColumnDefinition>
+            </Grid.ColumnDefinitions>
+            <Grid Grid.Column="1">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="*"></RowDefinition>
+                    <RowDefinition Height="*"></RowDefinition>
+                    <RowDefinition Height="*"></RowDefinition>
+                    <RowDefinition Height="*"></RowDefinition>
+                    <RowDefinition Height="*"></RowDefinition>
+                    <RowDefinition Height="*"></RowDefinition>
+                </Grid.RowDefinitions>
+                <StackPanel Grid.Row="0" Orientation="Horizontal" Grid.Column="1" VerticalAlignment="Center">
+                    <Label Content="    用户名:" FontSize="18"></Label>
+                    <TextBox Name="UserName" Width="200" Height="35"></TextBox>
+                </StackPanel>
+                <StackPanel Grid.Row="1" Orientation="Horizontal" Grid.Column="1" VerticalAlignment="Center">
+                    <Label Content="     密  码:" FontSize="18"></Label>
+                    <TextBox Name="UserPwd" Width="200" Height="35"></TextBox>
+                </StackPanel>
+                <StackPanel Grid.Row="2" Orientation="Horizontal" Grid.Column="1" VerticalAlignment="Center">
+                    <Label Content="确认密码:" FontSize="18"></Label>
+                    <TextBox Name="UserRepeatPwd" Width="200" Height="35"></TextBox>
+                </StackPanel>
+                <StackPanel Grid.Row="3" Orientation="Horizontal" Grid.Column="1" VerticalAlignment="Center">
+                    <Label Content="验证问题:" FontSize="18"></Label>
+                    <TextBox Name="UserQuestion" Width="200" Height="35"></TextBox>
+                </StackPanel>
+                <StackPanel Grid.Row="4" Orientation="Horizontal" Grid.Column="1" VerticalAlignment="Center">
+                    <Label Content="问题答案:" FontSize="18"></Label>
+                    <TextBox Name="UserAnswer" Width="200" Height="35"></TextBox>
+                </StackPanel>
+                <StackPanel Grid.Row="5" Orientation="Horizontal" Grid.Column="1" VerticalAlignment="Center" HorizontalAlignment="Center">
+                    <Button Content="提交"  Height="40" Width="80" ></Button>
+                </StackPanel>
+            </Grid>
+
+        </Grid>
     </Grid>
 </Window>
