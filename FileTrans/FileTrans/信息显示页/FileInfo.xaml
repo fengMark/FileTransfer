@@ -5,8 +5,66 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:FileTrans.信息显示页"
         mc:Ignorable="d"
-        Title="FileInfo" Height="450" Width="800">
+        Title="FileInfo" Height="450" Width="800" WindowStyle="None">
     <Grid>
-        
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"></RowDefinition>
+            <RowDefinition Height="7*"></RowDefinition>
+        </Grid.RowDefinitions>
+        <Grid Grid.Row="0" Background="#FF3C8E75">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="2*"></ColumnDefinition>
+                <ColumnDefinition Width="6*"></ColumnDefinition>
+                <ColumnDefinition Width="*"></ColumnDefinition>
+                <ColumnDefinition Width="2*"></ColumnDefinition>
+            </Grid.ColumnDefinitions>
+            <Label Name="SoftName" Grid.Column="1" Content="文件信息" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="32" FontFamily="Segoe UI Black" Foreground="#FFFA5F5F"/>
+            <StackPanel Grid.Column="3" Orientation="Horizontal" HorizontalAlignment="Right">
+                <Button Name="Hide"  Width="40" Height="40" Content="-" FontSize="30" Background="#FF3C8E75" HorizontalAlignment="Right" VerticalAlignment="Center" BorderThickness="1,1,1,1" Margin="0,0,2,0">
+                </Button>
+                <Button Name="Close"  Width="40" Height="40" Content="X" FontSize="30" Background="#FF3C8E75" HorizontalAlignment="Right" VerticalAlignment="Center" BorderThickness="1,1,1,1" Margin="0,0,3,0" />
+            </StackPanel>
+        </Grid>
+        <Grid Grid.Row="1">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"></ColumnDefinition>
+                <ColumnDefinition Width="2*"></ColumnDefinition>
+                <ColumnDefinition Width="*"></ColumnDefinition>
+            </Grid.ColumnDefinitions>
+            <Grid Grid.Column="1" >
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="*"></RowDefinition>
+                    <RowDefinition Height="*"></RowDefinition>
+                    <RowDefinition Height="*"></RowDefinition>
+                    <RowDefinition Height="*"></RowDefinition>
+                    <RowDefinition Height="*"></RowDefinition>
+                    <RowDefinition Height="*"></RowDefinition>
+                </Grid.RowDefinitions>
+                <StackPanel Grid.Row="0" Orientation="Horizontal" VerticalAlignment="Center" >
+                    <TextBlock Text="文 件 名 称：" FontSize="25"></TextBlock>
+                    <Label Content="{}"></Label>
+                </StackPanel>
+                <StackPanel Grid.Row="1" Orientation="Horizontal" VerticalAlignment="Center">
+                    <TextBlock Text="项 目 类 型：" FontSize="25"></TextBlock>
+                    <Label Content="{}"></Label>
+                </StackPanel>
+                <StackPanel Grid.Row="2" Orientation="Horizontal" VerticalAlignment="Center">
+                    <TextBlock Text="文件夹路径：" FontSize="25"></TextBlock>
+                    <Label Content="{}"></Label>
+                </StackPanel>
+                <StackPanel Grid.Row="3" Orientation="Horizontal" VerticalAlignment="Center">
+                    <TextBlock Text="文 件 大 小：" FontSize="25"></TextBlock>
+                    <Label Content="{}"></Label>
+                </StackPanel>
+                <StackPanel Grid.Row="4" Orientation="Horizontal" VerticalAlignment="Center">
+                    <TextBlock Text="创 建 日 期：" FontSize="25"></TextBlock>
+                    <Label Content="{}"></Label>
+                </StackPanel>
+                <StackPanel Grid.Row="5" Orientation="Horizontal" VerticalAlignment="Center">
+                    <TextBlock Text="修 改 日 期：" FontSize="25"></TextBlock>
+                    <Label Content="{}"></Label>
+                </StackPanel>
+            </Grid>
+        </Grid>
     </Grid>
 </Window>
