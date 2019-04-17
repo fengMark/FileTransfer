@@ -5,8 +5,52 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:FileTrans"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+        Title="MainWindow" Height="450" Width="800" WindowStyle="None">
     <Grid>
-        
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"></RowDefinition>
+            <RowDefinition Height="7*"></RowDefinition>
+        </Grid.RowDefinitions>
+        <Grid Grid.Row="0" Background="#FF3C8E75">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="2*"></ColumnDefinition>
+                <ColumnDefinition Width="6*"></ColumnDefinition>
+                <ColumnDefinition Width="*"></ColumnDefinition>
+                <ColumnDefinition Width="2*"></ColumnDefinition>
+            </Grid.ColumnDefinitions>
+            <Label Name="SoftName" Grid.Column="1" Content="文件传输" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="32" FontFamily="Segoe UI Black" Foreground="#FFFA5F5F"/>
+            <StackPanel Grid.Column="3" Orientation="Horizontal" HorizontalAlignment="Right">
+                <Button Name="Hide"  Width="40" Height="40" Content="-" FontSize="30" Background="#FF3C8E75" HorizontalAlignment="Right" VerticalAlignment="Center" BorderThickness="1,1,1,1" Margin="0,0,2,0">
+                </Button>
+                <Button Name="Close"  Width="40" Height="40" Content="X" FontSize="30" Background="#FF3C8E75" HorizontalAlignment="Right" VerticalAlignment="Center" BorderThickness="1,1,1,1" Margin="0,0,3,0" />
+            </StackPanel>
+        </Grid>
+        <Grid Grid.Row="1">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*"></RowDefinition>
+                <RowDefinition Height="*"></RowDefinition>
+                <RowDefinition Height="4*"></RowDefinition>
+                <RowDefinition Height="*"></RowDefinition>
+            </Grid.RowDefinitions>
+            <Grid Grid.Row="0">
+                <StackPanel Orientation="Horizontal">
+                    <TextBlock Text="对端IP地址:" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="20"></TextBlock>
+                    <TextBox Width="400"></TextBox>
+                    <TextBlock Text="端口号：" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="20"></TextBlock>
+                    <TextBox Width="100"></TextBox>
+                </StackPanel>
+            </Grid>
+            <Grid Grid.Row="1">
+                <StackPanel Orientation="Horizontal">
+                    <TextBlock Text="共享文件名称：" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="20"></TextBlock>
+                    <TextBox Width="400"></TextBox>
+                    <Button Content="连接" FontSize="20" Width="60" Height="30"></Button>
+                    <Button Content="断开" FontSize="20" Width="60" Height="30"></Button>
+                </StackPanel>
+            </Grid>
+            <GroupBox Grid.Row="2" Content="浏览文件并选择下载文件">
+
+            </GroupBox>
+        </Grid>
     </Grid>
 </Window>
